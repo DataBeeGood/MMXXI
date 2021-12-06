@@ -25,7 +25,7 @@ public class MenuUIHandler : MonoBehaviour
     }
 
     //BBFIX01 Add Method to Menu Handler Script to load Main scene...
-    //BBNOTE Scene 0 is Menu Scene 1 is Main
+    //BBNOTE Scene 0 is Menu Scene 1 is Main see Build Settings the list is according to this order top to bottom
     public void StartNew()
     {
         SceneManager.LoadScene(1);
