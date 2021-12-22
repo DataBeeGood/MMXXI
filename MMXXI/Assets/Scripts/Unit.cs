@@ -24,10 +24,14 @@ public abstract class Unit : MonoBehaviour,
         m_Agent.angularSpeed = 999;
     }
 
-    private void Start()
-    {
-
-    }
+	private void Start()
+	{
+		// SetColor
+		if (GameDataManager.Instance != null)
+		{
+			SetColor(GameDataManager.Instance.TeamColor);
+		}
+	}
 
     void SetColor(Color c)
     {
